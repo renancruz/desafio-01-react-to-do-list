@@ -1,0 +1,32 @@
+.header_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content_header{
+  display: flex;
+  gap: 10px;
+  margin-top: 64px;
+}
+
+p {
+  color: var(--blue);
+  font-size: var(--fonte-medium);
+  font-weight: 700;
+}
+
+span {
+  border-radius: 8px;
+  background: var(--gray-400);
+  height: 19px;
+  padding: 2px 8px 2px 8px ;
+  text-align: center;
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: var(--font-small);
+}
+
+.task_done {
+  color: var(--purple);
+}

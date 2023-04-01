@@ -1,0 +1,41 @@
+ form {
+  display: flex;
+  gap: 8px;
+  margin-top: -31px;
+}
+
+input {
+  padding: 16px;
+  height: 54px;
+  width: 638px;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  font-size: var(--fonte-large);
+}
+
+input:focus {
+  border-color: var(--purple-dark);
+}
+
+button {
+  width: 90px;
+  height: 52px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fonte-medium);
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--blue);
+  transition: background-color 0.1s;
+}

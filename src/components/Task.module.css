@@ -1,0 +1,51 @@
+
+
+.task {
+  display: flex;
+  gap: 10px;
+  height: 72px;
+  margin-top: 24px;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background: var(--gray-500);
+  padding: 16px 20px;
+  align-items: start;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.task p {
+  color: var(--gray-100);
+  font-size: var(--fonte-medium);
+  width: 630px;
+  font-weight: 400;
+}
+
+.unchecked {
+  height: 18px;
+  width: 18px;
+  border-radius: 100px;
+  border: 1px solid var(--blue);
+  display: block;
+}
+
+.checked {
+  height: 18px;
+  width: 18px;
+  border-radius: 100px;
+  border: 2px solid var(--purple-dark);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: var(--purple-dark);
+  
+}
+
+.trash {
+  color: var(--gray-300);
+}
+
+.trash:hover {
+  color: var(--danger);
+  cursor: pointer;
+}
