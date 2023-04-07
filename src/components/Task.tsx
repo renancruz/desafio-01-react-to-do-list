@@ -26,11 +26,20 @@ export default function Task({ task, onDelete, onToggleClick }:TaskProps) {
           <Check size={14} weight='bold' color='white'/>
         </div>
       ) : (
-        <div className={styles.unchecked}></div>  
+        <div>
+          <div className={styles.unchecked}></div> 
+        </div>
+         
       )}
 
-      <p>{task.text}</p>
-      <Trash onMouseDown={handleDelete}  className={styles.trash} size={14}/>
+      {
+        task.isChecked ? (<p className={styles.textChecked}>{task.text}</p>) : (<p>{task.text}</p>)
+      }
+      
+      <div className={styles.coverTrash} onMouseDown={handleDelete} >
+        <Trash className={styles.trash} size={14} width={25}/>
+      </div>
+      
     </div>        
   )
 }

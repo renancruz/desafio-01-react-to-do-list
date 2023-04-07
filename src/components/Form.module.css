@@ -11,8 +11,12 @@ input {
   border: 1px solid var(--gray-700);
   border-radius: 8px;
   background: var(--gray-500);
-  color: var(--gray-300);
+  color: var(--gray-100);
   font-size: var(--fonte-large);
+}
+
+input::placeholder {
+  color: var(--gray-300);
 }
 
 input:focus {
